@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
-    "deploy": "git push ../markharperio2.0-deploy/ split:master && cd ../markharperio2.0-deploy && git push origin master && cd ../markharperio2.0"
+    "deploy": "npm run build && git subtree push --prefix=dist --squash deploy master"
   },
   "keywords": [],
   "author": "",
