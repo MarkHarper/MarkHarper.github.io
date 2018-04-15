@@ -41,6 +41,8 @@
   },
   "gh-pages-deploy": {
     "staticpath": "dist",
-    "cname": "markharper.io"
+    "cname": "markharper.io",
+    "production": "master",
+    "dev": "dev"
   }
 }
