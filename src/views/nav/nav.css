@@ -1,0 +1,87 @@
+@import './nav-link.css';
+
+.nav-main {
+  display: flex;
+  width: 100%;
+  height: 82px;
+  justify-content: space-between;
+  padding: 0 2em;
+  box-sizing: border-box;
+  align-items: center;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.11);
+}
+
+.nav-content-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  width: 33%;
+}
+
+.nav-content-middle {
+  display: flex;
+  justify-content: space-around;
+  width: 33%;
+}
+
+.nav-content-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 33%;
+}
+
+.nav-name {
+  text-decoration: none;
+  color: var(--darkGrey);
+  font-family: Stalemate,cursive;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: .2em;
+  margin-left: 0.25em;
+}
+
+.nav-content-left:hover .nav-hide-cafe {
+  background-color: transparent
+}
+
+.nav-content-left:hover {
+  cursor: pointer;
+}
+
+.nav-icon-cafe {
+  width: 45px;
+  vertical-align: middle;
+  color: var(--darkGrey);
+}
+
+.nav-hide-cafe {
+  background-color: var(--white);
+  width: 45px;
+  height: 18px;
+  position: absolute;
+  z-index: 5;
+  transition: background-color .3s;
+}
+
+.btn-resume {
+  text-transform: uppercase;
+  border-radius: 2px;
+  line-height: 1.1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .1em;
+  padding: .7em .9em;
+  font-family: Ubuntu,sans-serif;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: box-shadow 0.1s;
+  
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.btn-resume:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 8px 0px;
+}
