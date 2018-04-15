@@ -2,11 +2,6 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const FlowBabelWebpackPlugin = require('flow-babel-webpack-plugin');
 
 module.exports = {
-  output: {
-    publicPath: '/',
-    filename: 'main.js',
-    path: '/dist'
-  },
   devServer: {
     contentBase: './dist',
     historyApiFallback: {
@@ -48,7 +43,7 @@ module.exports = {
     new FlowBabelWebpackPlugin(),
     new HtmlWebPackPlugin({
       template: "./src/index.html",
-      filename: "./index.html",
+      filename: "index.html",
       favicon: "./src/favicon.ico"
     })
   ]
